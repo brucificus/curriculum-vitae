@@ -12,18 +12,23 @@
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-sass": "^2.1.15",
     "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-typography": "^2.3.8",
     "gatsby-source-filesystem": "^2.1.26",
     "gatsby-transformer-sharp": "^2.2.16",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-us-web-design-standards": "^0.16.19"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "@types/react-helmet": "^5.0.10",
+    "@types/typography": "^0.16.3",
     "gatsby-plugin-typescript": "^2.1.9",
     "prettier": "^1.18.2",
     "sass": "^1.22.12"
