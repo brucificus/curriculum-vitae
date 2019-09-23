@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "caption"
+                         "content";
+}
+
+.caption {
+    grid-area: caption;
+    text-transform: uppercase;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
+.content {
+    grid-area: content;
+}

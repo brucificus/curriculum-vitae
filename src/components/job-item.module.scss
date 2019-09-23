@@ -1,0 +1,32 @@
+.container {
+
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "jtf etr"
+                         "enm elc";
+}
+
+.jobTitleFinal {
+    grid-area: jtf;
+    font-weight: bold;
+}
+
+.employerName {
+    grid-area: enm;
+    font-style: italic;
+}
+
+.employmentTimeRange {
+    grid-area: etr;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.employerLocation {
+    grid-area: elc;
+    display: flex;
+    flex-direction: row-reverse;
+}
