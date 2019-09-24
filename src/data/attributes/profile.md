@@ -1,1 +1,1 @@
-A dedicated software craftsman with over 11 years of professional experience writing and maintaining web, backend, and desktop applications. Proven record of combining innovation with industry best practices to address rapidly growing feature-sets and user capacity.
+A passionate software craftsman with over 11 years of professional experience writing and maintaining full stack web applications and DevOps solutions. Enthusiastic advocate for reliable operations, sustainable software engineering culture, and delightful user experiences.
