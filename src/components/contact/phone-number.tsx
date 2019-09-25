@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { IoIosPhonePortrait } from "react-icons/io";
+
+import phoneNumberStyles from "./phone-number.module.scss";
 
 const PhoneNumber = (props) => { 
     const href = "callto:" + (props.value.replace("(","").replace(")","").replace(" ","").replace("-",""));
-    return <a href={href}>{props.value}</a>;
+    return <span className={phoneNumberStyles.container}><a href={href}><IoIosPhonePortrait /></a>&nbsp;<span>{props.value}</span></span>;
 };
 
 export default PhoneNumber;

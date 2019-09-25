@@ -6,3 +6,21 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.contact {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "adr phn eml 1fr 1fr";
+}
+
+.contact > Address {
+  grid-area: adr;
+}
+
+.contact > PhoneNumber {
+  grid-area: phn;
+}
+
+.contact > EmailAddress {
+  grid-area: eml;
+}
