@@ -13,13 +13,15 @@ const IndexPage = () => (
 
     <Header/>
 
-    <Section caption="Profile">
-      <ProfileText/>
-    </Section>
+    <main>
+      <Section caption="Profile">
+        <ProfileText/>
+      </Section>
 
-    <Section caption="Professional Experience">
-      <Jobs />
-    </Section>
+      <Section caption="Professional Experience">
+        <Jobs />
+      </Section>
+    </main>
   </Layout>
 )
 
