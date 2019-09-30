@@ -9,7 +9,7 @@ import Jobs from "../components/jobs";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Bruce Markham, Senior Software Engineer" />
 
     <Header/>
 
