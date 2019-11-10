@@ -16,9 +16,24 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: npm deploy
+    - name: Configure Git identity
+      run: |
+        git config --global user.email "noreply@github.com"
+        git config --global user.name "GitHub"
+    - name: npm ci
       run: |
         npm ci
+      env:
+        CI: true
+    - name: npm run build-for-deploy
+      run: |
+        npm run build-for-deploy
+      env:
+        CI: true
+    - name: npm run deploy
+      run: |
         npm run deploy
       env:
         CI: true
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ github.actor }}
