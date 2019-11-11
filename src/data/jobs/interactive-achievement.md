@@ -1,8 +1,8 @@
 ---
 employer-name: "Interactive Achievement"
 employer-location: "Roanoke, VA"
-employment-start: "2008-01-01"
-employment-end: "2013-12-01"
+employment-start: "2008-01-01T05:00Z"
+employment-end: "2013-12-01T05:00Z"
 job-title-final: "Software Developer II"
 ---
 

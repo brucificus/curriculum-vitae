@@ -1,8 +1,8 @@
 ---
 employer-name: "NetVentures"
 employer-location: "Roanoke, VA"
-employment-start: "2013-12-01"
-employment-end: "2014-06-01"
+employment-start: "2013-12-01T04:00Z"
+employment-end: "2014-06-01T04:00Z"
 job-title-final: "Software Developer II"
 ---
 
