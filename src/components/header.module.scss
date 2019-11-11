@@ -8,19 +8,9 @@
 }
 
 .contact {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-areas: "adr phn eml 1fr 1fr";
-}
-
-.contact > Address {
-  grid-area: adr;
-}
-
-.contact > PhoneNumber {
-  grid-area: phn;
-}
-
-.contact > EmailAddress {
-  grid-area: eml;
+  font-size: smaller;
+  justify-content: space-around;
+  list-style: none;
 }
