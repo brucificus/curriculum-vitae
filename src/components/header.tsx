@@ -4,6 +4,7 @@ import headerStyles from "./header.module.scss";
 import PhoneNumber from "./contact/phone-number";
 import EmailAddress from "./contact/email-address";
 import LinkedIn from "./contact/linkedin";
+import GitHub from "./contact/github";
 
 const Header = () => (
   <header className={headerStyles.container}>
@@ -13,6 +14,7 @@ const Header = () => (
         <PhoneNumber value="(540) 627-5735" />
         <EmailAddress value="bruce.markham@gmail.com"/>
         <LinkedIn shortUrlLeaf="dbmarkham2" />
+        <GitHub repoOwner="brucificus" />
       </div>
     </p>
   </header>
