@@ -10,12 +10,12 @@ const Header = () => (
   <header className={headerStyles.container}>
     <p>
       <span className={headerStyles.identityText}>Bruce Markham</span>, <span className={headerStyles.identityText}>Senior Software Engineer</span><br/>
-      <div className={headerStyles.contact}>
-        <PhoneNumber value="(540) 627-5735" />
-        <EmailAddress value="bruce.markham@gmail.com"/>
-        <LinkedIn shortUrlLeaf="dbmarkham2" />
-        <GitHub repoOwner="brucificus" />
-      </div>
+      <ul className={headerStyles.contact}>
+        <li><PhoneNumber value="(540) 627-5735" /></li>
+        <li><EmailAddress value="bruce.markham@gmail.com"/></li>
+        <li><LinkedIn shortUrlLeaf="dbmarkham2" /></li>
+        <li><GitHub repoOwner="brucificus" /></li>
+      </ul>
     </p>
   </header>
 );
