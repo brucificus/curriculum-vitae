@@ -48,7 +48,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "build-for-deploy": "gatsby build --prefix-paths",
-    "deploy": "gh-pages -d public -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/brucificus/curriculum-vitae.git -b gh-pages"
+    "deploy": "gh-pages -d public -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/brucificus/curriculum-vitae.git -b gh-pages --dotfiles"
   },
   "repository": {
     "type": "git",
