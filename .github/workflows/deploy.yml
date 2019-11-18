@@ -11,29 +11,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
     - uses: actions/checkout@v1
+
     - name: Use Node.js 12.x
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: Configure Git identity
-      run: |
-        git config --global user.email "noreply@github.com"
-        git config --global user.name "GitHub"
+
     - name: npm ci
       run: |
         npm ci
       env:
         CI: true
+
     - name: npm run build-for-deploy
       run: |
         npm run build-for-deploy
       env:
         CI: true
-    - name: npm run deploy
-      run: |
-        npm run deploy
+
+    - name: Deploy
+      uses: docker://peaceiris/gh-pages:00a0fa7ee8bd33aee5389fcee5eed89934afedef04c894283de2da307a793f92 # v2.5.1
       env:
-        CI: true
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_ACTOR: ${{ github.actor }}
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
+      with:
+        emptyCommits: false
