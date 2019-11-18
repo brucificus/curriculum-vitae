@@ -32,7 +32,7 @@ jobs:
         CI: true
 
     - name: Deploy
-      uses: docker://peaceiris/gh-pages:00a0fa7ee8bd33aee5389fcee5eed89934afedef04c894283de2da307a793f92 # v2.5.1
+      uses: docker://peaceiris/gh-pages:v2.5.1
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
