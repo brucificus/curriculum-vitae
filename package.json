@@ -26,7 +26,7 @@
     "typography-theme-us-web-design-standards": "^0.16.19"
   },
   "devDependencies": {
-    "@types/node": "^13.7.2",
+    "@types/node": "^13.7.4",
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
     "@types/react-helmet": "^5.0.15",
