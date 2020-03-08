@@ -2,6 +2,7 @@
 employer-name: "FoxGuard Solutions"
 employer-location: "Christiansburg, VA"
 employment-start: "2014-11-01T04:00Z"
+employment-end: "2019-12-14T05:00Z"
 job-title-final: "Software Engineer II"
 ---
 
