@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import Section from "../components/section";
 import ProfileText from "../components/profile-text";
 import Jobs from "../components/jobs";
+import Projects from "../components/projects";
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,10 @@ const IndexPage = () => (
 
       <Section caption="Professional Experience">
         <Jobs />
+      </Section>
+
+      <Section caption="Additional Projects">
+        <Projects />
       </Section>
     </main>
   </Layout>
