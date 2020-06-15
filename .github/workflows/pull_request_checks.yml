@@ -7,13 +7,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x]
-
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -27,3 +24,14 @@ jobs:
         npm test
       env:
         CI: true
+
+  auto-merge:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    steps:
+      - name: auto-merge
+        uses: ridedott/merge-me-action@v1.3.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_METHOD: REBASE
