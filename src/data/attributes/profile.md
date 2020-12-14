@@ -1,1 +1,1 @@
-A passionate software craftsman with over 12 years of professional experience writing and maintaining full stack web applications and DevOps solutions. Enthusiastic advocate for reliable operations, sustainable software engineering culture, and delightful user experiences.
+A passionate self-taught software craftsperson with over 12 years of professional experience writing and maintaining full stack web applications, with a deep focus on backend systems and DevOps solutions.
