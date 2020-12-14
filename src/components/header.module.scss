@@ -2,15 +2,32 @@
     white-space: nowrap;
 }
 
-.identityText {
+@mixin identityText {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.nameText {
+  @include identityText;
+
+  font-size: x-large;
+
+  border-right-width: 2pt;
+  border-right-style: dotted;
+  padding-right: 4pt;
+  margin-right: 4pt;
+}
+
+.professionText {
+  @include identityText;
+
+  font-size: medium;
 }
 
 .contact {
   display: flex;
   width: 100%;
-  font-size: smaller;
+  font-size: small;
   justify-content: space-around;
   list-style: none;
 }

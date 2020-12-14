@@ -9,7 +9,7 @@ import GitHub from "./contact/github";
 const Header = () => (
   <header className={headerStyles.container}>
     <p>
-      <span className={headerStyles.identityText}>Bruce Markham</span>, <span className={headerStyles.identityText}>Senior Software Engineer</span><br/>
+      <span className={headerStyles.nameText}>Bruce Markham</span><span className={headerStyles.professionText}>Senior Software Engineer</span><br/>
       <ul className={headerStyles.contact}>
         <li><PhoneNumber value="(540) 627-5735" /></li>
         <li><EmailAddress value="bruce.markham@gmail.com"/></li>
