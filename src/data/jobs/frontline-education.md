@@ -5,7 +5,6 @@ employment-start: "2019-12-16T05:00Z"
 job-title-final: "Senior Software Engineer II"
 ---
 
-- Serves as team's subject matter expert for IIS configuration, Classic ASP, VB.NET, and the broader .NET library ecosystem.
-- Applies rigorous code review and pairing exercises to mentor teammates on increased code cleanliness through the use of S.O.L.I.D. techniques, design patterns, and language/framework usage opportunities.
-- Refactors legacy ASP.NET application components from large files in states of disrepair to small self-documenting components engineered for longevity and testability.
-- Mentors teammates on identifying & documenting technical debt, and then making cost/reward decisions for addressing same.
+- Champions both the incremental identification and just-in-time remediation of large swathes of tech debt, increasing the observability, stability, and maintainability of an ageing legacy product.
+- Employs rigorous code review and pairing exercises to mentor teammates on increasing code maintainability through the use of S.O.L.I.D. techniques, design patterns, refactoring patterns, and language/framework usage opportunities.
+- Serves as team's subject matter expert for all things IIS and ASP.NET, the broader .NET library ecosystem, as well as DevOps techniques and tools.
