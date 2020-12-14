@@ -2,7 +2,7 @@
 employer-name: "Frontline Education"
 employer-location: "(Remote) Malvern, PA"
 employment-start: "2019-12-16T05:00Z"
-job-title-final: "Sr. Software Developer"
+job-title-final: "Senior Software Engineer II"
 ---
 
 - Serves as team's subject matter expert for IIS configuration, Classic ASP, VB.NET, and the broader .NET library ecosystem.
