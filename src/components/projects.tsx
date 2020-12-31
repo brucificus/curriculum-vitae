@@ -5,19 +5,15 @@ import ProjectItem from "./project-item"
 
 const query = graphql`
   query {
-    allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/(projects)/"}},
-      sort: {fields: frontmatter___project_start, order: DESC}) {
-      edges {
-        node {
-          frontmatter {
-            project_name
-            project_location
-            project_start
-            project_end
-            role_final
-          }
-          html
+    allProjectsYaml(sort: {fields: project___project_start, order: DESC}) {
+      nodes {
+        project {
+          project_name
+          project_location
+          project_start
+          project_end
+          role_final
+          accomplishments
         }
       }
     }
@@ -25,14 +21,14 @@ const query = graphql`
 `
 const Jobs = () => {
     const data = useStaticQuery(query);
-    return data.allMarkdownRemark.edges.map(({ node }) => (
+    return data.allProjectsYaml.nodes.map(({ project }) => (
         <ProjectItem
-            projectName={node.frontmatter.project_name}
-            projectLocation={node.frontmatter.project_location}
-            projectStart={node.frontmatter.project_start}
-            projectEnd={node.frontmatter.project_end}
-            roleFinal={node.frontmatter.role_final}
-            overviewHtml={node.html}
+            projectName={project.project_name}
+            projectLocation={project.project_location}
+            projectStart={project.project_start}
+            projectEnd={project.project_end}
+            roleFinal={project.role_final}
+            accomplishments={project.accomplishments}
         />
     ));
 };
