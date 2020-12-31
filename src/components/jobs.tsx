@@ -5,19 +5,15 @@ import JobItem from "./job-item"
 
 const query = graphql`
   query {
-    allMarkdownRemark(
-      filter: {fileAbsolutePath: {regex: "/(jobs)/"}},
-      sort: {fields: frontmatter___employment_start, order: DESC}) {
-      edges {
-        node {
-          frontmatter {
-            employer_name
-            employer_location
-            employment_start
-            employment_end
-            job_title_final
-          }
-          html
+    allJobsYaml(sort: {fields: job___employment_start, order: DESC}) {
+      nodes {
+        job {
+          employer_name
+          employer_location
+          employment_start
+          employment_end
+          job_title_final
+          accomplishments
         }
       }
     }
@@ -25,14 +21,14 @@ const query = graphql`
 `
 const Jobs = () => {
     const data = useStaticQuery(query);
-    return data.allMarkdownRemark.edges.map(({ node }) => (
+    return data.allJobsYaml.nodes.map(({ job }) => (
         <JobItem
-            employerName={node.frontmatter.employer_name}
-            employerLocation={node.frontmatter.employer_location}
-            employmentStart={node.frontmatter.employment_start}
-            employmentEnd={node.frontmatter.employment_end}
-            jobTitleFinal={node.frontmatter.job_title_final}
-            overviewHtml={node.html}
+            employerName={job.employer_name}
+            employerLocation={job.employer_location}
+            employmentStart={job.employment_start}
+            employmentEnd={job.employment_end}
+            jobTitleFinal={job.job_title_final}
+            accomplishments={job.accomplishments}
         />
     ));
 };

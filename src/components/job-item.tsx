@@ -12,7 +12,13 @@ const JobItem = (props) =>
             <span className={jobItemStyles.employerLocation}>{props.employerLocation}</span>
             <span className={jobItemStyles.employmentTimeRange}><TimeRange start={props.employmentStart} end={props.employmentEnd}/></span>
         </header>
-        <main dangerouslySetInnerHTML={{ __html: props.overviewHtml }} />
+        <main>
+            <ul>
+                {props.accomplishments.map(i =>
+                    <li dangerouslySetInnerHTML={{ __html: i }} />
+                )}
+            </ul>
+        </main>
     </article>;
 
 export default JobItem;
@@ -23,5 +29,5 @@ JobItem.propTypes = {
     employmentStart: PropTypes.string.isRequired,
     employmentEnd: PropTypes.string,
     jobTitleFinal: PropTypes.string.isRequired,
-    overviewHtml: PropTypes.string.isRequired,
+    accomplishments: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

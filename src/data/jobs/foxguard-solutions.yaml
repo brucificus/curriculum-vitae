@@ -1,0 +1,15 @@
+job:
+  employer-name: "FoxGuard Solutions"
+  employer-location: "Christiansburg, VA"
+  employment-start: "2014-11-01T04:00Z"
+  employment-end: "2019-12-14T05:00Z"
+  job-title-final: "Software Engineer II"
+  accomplishments:
+  - Designed, built, and maintained 20+ disparate continuous delivery pipelines, captured as code using Jenkins Job DSL, coordinated with GitHub, and gated by mandatory peer code reviews.
+  - Built and deployed web applications, backend applications, and scripts for a variety of target execution platforms including IIS / ASP.NET, ASP.NET Core, Node.js, Python, PowerShell, Docker, AWS Elastic Beanstalk, AWS Elastic Container Service, and AWS Lambda.
+  - Migrated bespoke-deployed IIS web applications on self-managed VMs at Rackspace to immutable infrastructure at AWS, using Terraform and PowerShell. Reduced hosting costs by a factor of 2, sped up production deployment times by a factor of 5.
+  - Empowered team to safely iterate on our cloud infrastructure by capturing its definition as code and rigorously integrating its management with our continuous delivery processes and systems.
+  - Upgraded large ASP.NET MVC 5 application to ASP.NET Core 2.2. Increased performance and decreased maintenance overhead, ensuring application longevity.
+  - Functioned as team's subject-matter expert for C#, ASP.NET MVC, Entity Framework, T-SQL, TypeScript / JavaScript, and Terraform.
+  - Served as detail-oriented mentor for colleagues in code cleanliness, object-oriented design, test-driven development, dependency injection, performance tuning, normalized database design, HATEOAS API design, continuous delivery, tech debt trade-off decision-making, and Agile software development lifecycle management.
+  - Led recurring book clubs and lunch-and-learns for professional development.
