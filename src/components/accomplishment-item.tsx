@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Accomplishment, accomplishmentPropType } from "../models/accomplishment";
+import { IAccomplishment, accomplishmentPropType } from "../models/accomplishment";
 
 interface IAccomplishmentItemProps {
-    accomplishment: Accomplishment
+    accomplishment: IAccomplishment
 };
 
 const AccomplishmentItem = (props: IAccomplishmentItemProps) => {
-  return <li dangerouslySetInnerHTML={{ __html: props.accomplishment }} />;
+  return <li dangerouslySetInnerHTML={{ __html: props.accomplishment.description }} />;
 };
 
 export default AccomplishmentItem;

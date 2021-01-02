@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Accomplishment, accomplishmentPropType } from "./accomplishment";
+import { IAccomplishment, accomplishmentPropType } from "./accomplishment";
 
 export interface IJob {
     employer_name: string;
@@ -7,7 +7,7 @@ export interface IJob {
     employment_start: string;
     employment_end: string | undefined | null;
     job_title_final: string;
-    accomplishments: Accomplishment[];
+    accomplishments: IAccomplishment[];
 };
 
 export function jobPropTypes(): PropTypes.ValidationMap<IJob> {

@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Accomplishment, accomplishmentPropType } from "../models/accomplishment";
+import { IAccomplishment, accomplishmentPropType } from "../models/accomplishment";
 import AccomplishmentItem from "./accomplishment-item";
 
 interface IAccomplishmentsProps {
-    accomplishments: Accomplishment[]
+    accomplishments: IAccomplishment[]
 };
 
 const Accomplishments = (props: IAccomplishmentsProps) => (

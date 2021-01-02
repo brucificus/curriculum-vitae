@@ -15,7 +15,10 @@ const query = graphql`
           employment_start
           employment_end
           job_title_final
-          accomplishments
+          accomplishments {
+            description
+            for_resume_variants
+          }
         }
       }
     }

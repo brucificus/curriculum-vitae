@@ -15,7 +15,10 @@ const query = graphql`
           project_start
           project_end
           role_final
-          accomplishments
+          accomplishments {
+            description
+            for_resume_variants
+          }
         }
       }
     }

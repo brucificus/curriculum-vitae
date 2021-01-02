@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Accomplishment, accomplishmentPropType } from "./accomplishment";
+import { IAccomplishment, accomplishmentPropType } from "./accomplishment";
 
 export interface IProject {
     project_name: string;
@@ -7,7 +7,7 @@ export interface IProject {
     project_start: string;
     project_end: string | undefined | null;
     role_final: string;
-    accomplishments: Accomplishment[];
+    accomplishments: IAccomplishment[];
 };
 
 export function projectPropTypes(): PropTypes.ValidationMap<IProject> {
