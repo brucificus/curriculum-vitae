@@ -1,7 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import JobItem from "./job-item"
+import { IJob } from "../models/job";
+import JobItem from "./job-item";
+import Accomplishments from "./accomplishments";
 
 const query = graphql`
   query {
@@ -19,11 +21,14 @@ const query = graphql`
     }
   }
 `
+
 const Jobs = () => {
-    const data = useStaticQuery(query);
-    return data.allJobsYaml.nodes.map(({ job }) =>
-        <JobItem job={job} />
-    );
+  const data = useStaticQuery(query);
+  return data.allJobsYaml.nodes.map(({ job }: { job: IJob }) =>
+    <JobItem job={job}>
+      <Accomplishments accomplishments={job.accomplishments} />
+    </JobItem>
+  );
 };
 
 export default Jobs;

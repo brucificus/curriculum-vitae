@@ -1,14 +1,16 @@
 import React from "react";
-import { IJob, jobPropTypes } from "../models/job";
+import PropTypes from "prop-types";
 
+import { IJob, jobPropTypes } from "../models/job";
 import jobItemStyles from "./job-item.module.scss";
 import TimeRange from "./time-range";
 
 interface IJobItemProps {
-    job: IJob
+    job: IJob,
+    children: PropTypes.ReactNodeLike
 };
 
-const JobItem = (props: IJobItemProps) =>
+const JobItem = (props: IJobItemProps) => (
     <article className={jobItemStyles.container}>
         <header>
             <span className={jobItemStyles.jobTitleFinal}>{props.job.job_title_final}</span>
@@ -17,16 +19,14 @@ const JobItem = (props: IJobItemProps) =>
             <span className={jobItemStyles.employmentTimeRange}><TimeRange start={props.job.employment_start} end={props.job.employment_end}/></span>
         </header>
         <main>
-            <ul>
-                {props.job.accomplishments.map(i =>
-                    <li dangerouslySetInnerHTML={{ __html: i }} />
-                )}
-            </ul>
+            {props.children}
         </main>
-    </article>;
+    </article>
+);
 
 export default JobItem;
 
 JobItem.propTypes = {
-    job: jobPropTypes()
+    job: jobPropTypes(),
+    children: PropTypes.node.isRequired
 };
