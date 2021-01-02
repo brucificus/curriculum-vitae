@@ -1,16 +1,16 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { IProject, projectPropTypes } from "../models/project";
 
 import jobItemStyles from "./project-item.module.scss";
 import TimeRange from "./time-range";
 
-const JobItem = (props) =>
+const JobItem = (props: IProject) =>
     <article className={jobItemStyles.container}>
         <header>
-            <span className={jobItemStyles.roleFinal}>{props.roleFinal}</span>
-            <span className={jobItemStyles.projectName}>{props.projectName}</span>
-            <span className={jobItemStyles.projectLocation}>{props.projectLocation}</span>
-            <span className={jobItemStyles.projectTimeRange}><TimeRange start={props.projectStart} end={props.projectEnd}/></span>
+            <span className={jobItemStyles.roleFinal}>{props.role_final}</span>
+            <span className={jobItemStyles.projectName}>{props.project_name}</span>
+            <span className={jobItemStyles.projectLocation}>{props.project_location}</span>
+            <span className={jobItemStyles.projectTimeRange}><TimeRange start={props.project_start} end={props.project_end}/></span>
         </header>
         <main>
             <ul>
@@ -23,11 +23,4 @@ const JobItem = (props) =>
 
 export default JobItem;
 
-JobItem.propTypes = {
-    projectName: PropTypes.string.isRequired,
-    projectLocation: PropTypes.string.isRequired,
-    projectStart: PropTypes.string.isRequired,
-    projectEnd: PropTypes.string,
-    roleFinal: PropTypes.string.isRequired,
-    accomplishments: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
+JobItem.propTypes = projectPropTypes();
