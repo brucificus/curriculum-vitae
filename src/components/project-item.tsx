@@ -1,11 +1,13 @@
 import React from "react";
-import { IProject, projectPropTypes } from "../models/project";
+import PropTypes from "prop-types";
 
+import { IProject, projectPropTypes } from "../models/project";
 import jobItemStyles from "./project-item.module.scss";
 import TimeRange from "./time-range";
 
 interface IProjectItemProps {
-    project: IProject
+    project: IProject,
+    children: PropTypes.ReactNodeLike
 };
 
 const ProjectItem = (props: IProjectItemProps) =>
@@ -17,16 +19,13 @@ const ProjectItem = (props: IProjectItemProps) =>
             <span className={jobItemStyles.projectTimeRange}><TimeRange start={props.project.project_start} end={props.project.project_end}/></span>
         </header>
         <main>
-            <ul>
-                {props.project.accomplishments.map(i =>
-                    <li dangerouslySetInnerHTML={{ __html: i }} />
-                )}
-            </ul>
+            {props.children}
         </main>
     </article>;
 
 export default ProjectItem;
 
 ProjectItem.propTypes = {
-    project: projectPropTypes()
+    project: projectPropTypes(),
+    children: PropTypes.node.isRequired
 };

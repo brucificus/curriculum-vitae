@@ -1,7 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import ProjectItem from "./project-item"
+import { IProject } from "../models/project";
+import ProjectItem from "./project-item";
+import Accomplishments from "./accomplishments";
 
 const query = graphql`
   query {
@@ -19,11 +21,14 @@ const query = graphql`
     }
   }
 `
+
 const Projects = () => {
-    const data = useStaticQuery(query);
-    return data.allProjectsYaml.nodes.map(({ project }) =>
-        <ProjectItem project={project} />
-    );
+  const data = useStaticQuery(query);
+  return data.allProjectsYaml.nodes.map(({ project }: { project: IProject }) =>
+    <ProjectItem project={project}>
+      <Accomplishments accomplishments={project.accomplishments} />
+    </ProjectItem>
+  );
 };
 
 export default Projects;
