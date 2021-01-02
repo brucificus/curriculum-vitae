@@ -5,4 +5,5 @@ project:
   project-end: "2020-08-03T05:00Z"
   role-final: "Principal Contributor"
   accomplishments:
-  - Served as principal author & maintainer to 94 open-source .NET micro-libraries that are continuously tested using GitHub Actions and then continuously delivered as individual public NuGet packages using Azure DevOps Pipelines.
+  - description: Served as principal author & maintainer to 94 open-source .NET micro-libraries that are continuously tested using GitHub Actions and then continuously delivered as individual public NuGet packages using Azure DevOps Pipelines.
+    for-resume-variants: all
