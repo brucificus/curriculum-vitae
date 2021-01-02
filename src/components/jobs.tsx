@@ -23,11 +23,11 @@ const Jobs = () => {
     const data = useStaticQuery(query);
     return data.allJobsYaml.nodes.map(({ job }) => (
         <JobItem
-            employerName={job.employer_name}
-            employerLocation={job.employer_location}
-            employmentStart={job.employment_start}
-            employmentEnd={job.employment_end}
-            jobTitleFinal={job.job_title_final}
+            employer_name={job.employer_name}
+            employer_location={job.employer_location}
+            employment_start={job.employment_start}
+            employment_end={job.employment_end}
+            job_title_final={job.job_title_final}
             accomplishments={job.accomplishments}
         />
     ));

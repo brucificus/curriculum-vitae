@@ -19,18 +19,18 @@ const query = graphql`
     }
   }
 `
-const Jobs = () => {
+const Projects = () => {
     const data = useStaticQuery(query);
     return data.allProjectsYaml.nodes.map(({ project }) => (
         <ProjectItem
-            projectName={project.project_name}
-            projectLocation={project.project_location}
-            projectStart={project.project_start}
-            projectEnd={project.project_end}
-            roleFinal={project.role_final}
+            project_name={project.project_name}
+            project_location={project.project_location}
+            project_start={project.project_start}
+            project_end={project.project_end}
+            role_final={project.role_final}
             accomplishments={project.accomplishments}
         />
     ));
 };
 
-export default Jobs;
+export default Projects;
