@@ -21,16 +21,9 @@ const query = graphql`
 `
 const Projects = () => {
     const data = useStaticQuery(query);
-    return data.allProjectsYaml.nodes.map(({ project }) => (
-        <ProjectItem
-            project_name={project.project_name}
-            project_location={project.project_location}
-            project_start={project.project_start}
-            project_end={project.project_end}
-            role_final={project.role_final}
-            accomplishments={project.accomplishments}
-        />
-    ));
+    return data.allProjectsYaml.nodes.map(({ project }) =>
+        <ProjectItem project={project} />
+    );
 };
 
 export default Projects;

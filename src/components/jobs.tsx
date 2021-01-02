@@ -21,16 +21,9 @@ const query = graphql`
 `
 const Jobs = () => {
     const data = useStaticQuery(query);
-    return data.allJobsYaml.nodes.map(({ job }) => (
-        <JobItem
-            employer_name={job.employer_name}
-            employer_location={job.employer_location}
-            employment_start={job.employment_start}
-            employment_end={job.employment_end}
-            job_title_final={job.job_title_final}
-            accomplishments={job.accomplishments}
-        />
-    ));
+    return data.allJobsYaml.nodes.map(({ job }) =>
+        <JobItem job={job} />
+    );
 };
 
 export default Jobs;
