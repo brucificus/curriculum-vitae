@@ -1,0 +1,11 @@
+{
+    "ts-node": { 
+        "compilerOptions": { 
+            "allowSyntheticDefaultImports": true 
+        }
+    },
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "esModuleInterop": true
+    }
+}

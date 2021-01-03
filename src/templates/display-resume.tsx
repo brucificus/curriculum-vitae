@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import * as PropTypes from "prop-types";
 
 import Layout from "../components/layout";
 import Header from "../components/header";
@@ -9,15 +10,21 @@ import JobsList from "../components/jobs-list";
 import ProjectsList from "../components/projects-list";
 import { AccomplishmentPredicates } from "../models/accomplishment";
 
-const IndexPage = function() {
-  const accomplishmentFilter = AccomplishmentPredicates.forAllOrSpecificResumeVariant("srsweng");
-  const profession_text = "Senior Software Engineer";
+interface IDisplayResumeProps {
+  pageContext: {
+    resumeVariant: string,
+    professionText: string
+  }
+}
+
+const DisplayResume = function(props: IDisplayResumeProps) {
+  const accomplishmentFilter = AccomplishmentPredicates.forAllOrSpecificResumeVariant(props.pageContext.resumeVariant);
 
   return (
     <Layout>
-      <SEO title={`Bruce Markham, ${profession_text}`} />
+      <SEO title={`Bruce Markham, ${props.pageContext.professionText}`} />
 
-      <Header profession_text={profession_text} />
+      <Header professionText={props.pageContext.professionText} />
 
       <main>
         <Section caption="Profile">
@@ -36,4 +43,11 @@ const IndexPage = function() {
   );
 }
 
-export default IndexPage
+DisplayResume.propTypes = {
+  pageContext: {
+    resumeVariant: PropTypes.string.isRequired,
+    professionText: PropTypes.string.isRequired
+  }
+};
+
+export default DisplayResume;
