@@ -1,3 +1,6 @@
+require('source-map-support').install();
+require('ts-node').register();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,

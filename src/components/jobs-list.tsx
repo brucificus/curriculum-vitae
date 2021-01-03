@@ -32,6 +32,7 @@ interface IJobsListProps {
 
 const JobsList = (props: IJobsListProps) => {
   const data = useStaticQuery(query);
+
   return data.allJobsYaml.nodes.map(function ({ job }: { job: IJob }) {
     const accomplishments = job.accomplishments.filter(props.accomplishmentFilter);
     if (accomplishments.length) {
