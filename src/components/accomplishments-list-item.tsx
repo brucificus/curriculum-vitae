@@ -2,16 +2,16 @@ import React from "react";
 
 import { IAccomplishment, accomplishmentPropType } from "../models/accomplishment";
 
-interface IAccomplishmentItemProps {
+interface IAccomplishmentsListItemProps {
     accomplishment: IAccomplishment
 };
 
-const AccomplishmentItem = (props: IAccomplishmentItemProps) => {
+const AccomplishmentsListItem = (props: IAccomplishmentsListItemProps) => {
   return <li dangerouslySetInnerHTML={{ __html: props.accomplishment.description }} />;
 };
 
-export default AccomplishmentItem;
+export default AccomplishmentsListItem;
 
-AccomplishmentItem.propTypes = {
+AccomplishmentsListItem.propTypes = {
     accomplishment: accomplishmentPropType()
 };

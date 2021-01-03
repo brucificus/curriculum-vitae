@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import { AccomplishmentPredicate, accomplishmentPredicatePropType } from "../models/accomplishment";
 import { IJob } from "../models/job";
-import JobItem from "./job-item";
-import Accomplishments from "./accomplishments";
+import JobsListItem from "./jobs-list-item";
+import AccomplishmentsList from "./accomplishments-list";
 
 const query = graphql`
   query {
@@ -26,19 +26,19 @@ const query = graphql`
   }
 `
 
-interface IJobsProps {
+interface IJobsListProps {
   accomplishmentFilter: AccomplishmentPredicate
 }
 
-const Jobs = (props: IJobsProps) => {
+const JobsList = (props: IJobsListProps) => {
   const data = useStaticQuery(query);
   return data.allJobsYaml.nodes.map(function ({ job }: { job: IJob }) {
     const accomplishments = job.accomplishments.filter(props.accomplishmentFilter);
     if (accomplishments.length) {
       return (
-        <JobItem job={job}>
-          <Accomplishments accomplishments={accomplishments} />
-        </JobItem>
+        <JobsListItem job={job}>
+          <AccomplishmentsList accomplishments={accomplishments} />
+        </JobsListItem>
       );
     } else {
       return <></>;
@@ -46,8 +46,8 @@ const Jobs = (props: IJobsProps) => {
   });
 };
 
-Jobs.propTypes = {
+JobsList.propTypes = {
   accomplishmentFilter: accomplishmentPredicatePropType().isRequired
 }
 
-export default Jobs;
+export default JobsList;
