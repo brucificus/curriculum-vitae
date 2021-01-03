@@ -5,8 +5,8 @@ job:
   job-title-final: "Senior Software Engineer II"
   accomplishments:
   - description: Champions both the incremental identification and just-in-time remediation of large swathes of tech debt, increasing the observability, stability, and maintainability of an ageing legacy product.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Employs rigorous code review and pairing exercises to mentor teammates on increasing code maintainability through the use of S.O.L.I.D. techniques, design patterns, refactoring patterns, and language/framework usage opportunities.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Serves as team's subject matter expert for all things IIS and ASP.NET, the broader .NET library ecosystem, as well as DevOps techniques and tools.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
