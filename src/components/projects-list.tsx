@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import { AccomplishmentPredicate, accomplishmentPredicatePropType } from "../models/accomplishment";
 import { IProject } from "../models/project";
-import ProjectItem from "./project-item";
-import Accomplishments from "./accomplishments";
+import ProjectsListItem from "./projects-list-item";
+import AccomplishmentsList from "./accomplishments-list";
 
 const query = graphql`
   query {
@@ -26,11 +26,11 @@ const query = graphql`
   }
 `
 
-interface IProjectsProps {
+interface IProjectsListProps {
   accomplishmentFilter: AccomplishmentPredicate
 }
 
-const Projects = (props: IProjectsProps) => {
+const ProjectsList = (props: IProjectsListProps) => {
   const data = useStaticQuery(query);
   
   return data.allProjectsYaml.nodes.map(function ({ project }: { project: IProject }) {
@@ -38,9 +38,9 @@ const Projects = (props: IProjectsProps) => {
     
     if (accomplishments.length) {
       return (
-        <ProjectItem project={project}>
-          <Accomplishments accomplishments={accomplishments} />
-        </ProjectItem>
+        <ProjectsListItem project={project}>
+          <AccomplishmentsList accomplishments={accomplishments} />
+        </ProjectsListItem>
       );
     } else {
       return <></>;
@@ -48,8 +48,8 @@ const Projects = (props: IProjectsProps) => {
   });
 };
 
-Projects.propTypes = {
+ProjectsList.propTypes = {
   accomplishmentFilter: accomplishmentPredicatePropType().isRequired
 }
 
-export default Projects;
+export default ProjectsList;

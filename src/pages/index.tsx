@@ -5,8 +5,8 @@ import Header from "../components/header";
 import SEO from "../components/seo";
 import Section from "../components/section";
 import ProfileText from "../components/profile-text";
-import Jobs from "../components/jobs";
-import Projects from "../components/projects";
+import JobsList from "../components/jobs-list";
+import ProjectsList from "../components/projects-list";
 import { AccomplishmentPredicates } from "../models/accomplishment";
 
 const IndexPage = function() {
@@ -24,11 +24,11 @@ const IndexPage = function() {
         </Section>
 
         <Section caption="Professional Experience">
-          <Jobs accomplishmentFilter={accomplishmentFilter} />
+          <JobsList accomplishmentFilter={accomplishmentFilter} />
         </Section>
 
         <Section caption="Additional Projects">
-          <Projects accomplishmentFilter={accomplishmentFilter} />
+          <ProjectsList accomplishmentFilter={accomplishmentFilter} />
         </Section>
       </main>
     </Layout>
