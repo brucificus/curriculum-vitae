@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+import { AccomplishmentPredicate, accomplishmentPredicatePropType } from "../models/accomplishment";
 import { IJob } from "../models/job";
 import JobItem from "./job-item";
 import Accomplishments from "./accomplishments";
@@ -25,13 +26,28 @@ const query = graphql`
   }
 `
 
-const Jobs = () => {
+interface IJobsProps {
+  accomplishmentFilter: AccomplishmentPredicate
+}
+
+const Jobs = (props: IJobsProps) => {
   const data = useStaticQuery(query);
-  return data.allJobsYaml.nodes.map(({ job }: { job: IJob }) =>
-    <JobItem job={job}>
-      <Accomplishments accomplishments={job.accomplishments} />
-    </JobItem>
-  );
+  return data.allJobsYaml.nodes.map(function ({ job }: { job: IJob }) {
+    const accomplishments = job.accomplishments.filter(props.accomplishmentFilter);
+    if (accomplishments.length) {
+      return (
+        <JobItem job={job}>
+          <Accomplishments accomplishments={accomplishments} />
+        </JobItem>
+      );
+    } else {
+      return <></>;
+    }
+  });
 };
+
+Jobs.propTypes = {
+  accomplishmentFilter: accomplishmentPredicatePropType().isRequired
+}
 
 export default Jobs;

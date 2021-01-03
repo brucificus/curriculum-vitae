@@ -7,27 +7,32 @@ import Section from "../components/section";
 import ProfileText from "../components/profile-text";
 import Jobs from "../components/jobs";
 import Projects from "../components/projects";
+import { AccomplishmentPredicates } from "../models/accomplishment";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Bruce Markham, Senior Software Engineer" />
+const IndexPage = function() {
+  const accomplishmentFilter = AccomplishmentPredicates.forAllOrSpecificResumeVariant("srsweng");
 
-    <Header/>
+  return (
+    <Layout>
+      <SEO title="Bruce Markham, Senior Software Engineer" />
 
-    <main>
-      <Section caption="Profile">
-        <ProfileText/>
-      </Section>
+      <Header/>
 
-      <Section caption="Professional Experience">
-        <Jobs />
-      </Section>
+      <main>
+        <Section caption="Profile">
+          <ProfileText/>
+        </Section>
 
-      <Section caption="Additional Projects">
-        <Projects />
-      </Section>
-    </main>
-  </Layout>
-)
+        <Section caption="Professional Experience">
+          <Jobs accomplishmentFilter={accomplishmentFilter} />
+        </Section>
+
+        <Section caption="Additional Projects">
+          <Projects accomplishmentFilter={accomplishmentFilter} />
+        </Section>
+      </main>
+    </Layout>
+  );
+}
 
 export default IndexPage

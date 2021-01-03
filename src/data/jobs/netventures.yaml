@@ -6,16 +6,16 @@ job:
   job-title-final: "Software Developer II"
   accomplishments:
   - description: Implemented features and redressed deficiencies in inherited codebase for web-facing self-service portal written in ASP.NET MVC and jQuery.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Iteratively stabilized, decoupled, unit tested, and rejuvenated failing project by employing refactoring best practices, dependency injection, interface-based design, and fail-fast techniques.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Identified and corrected performance problems by curtailing exception rate and collapsing N+1 requests to backend RESTful API. Verified performance increase of 10x by writing and running automated UI tests.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Led small development team to increase development throughput and code quality by thoroughly grooming and maintaining the backlog, performing code reviews, and managing code branch integration.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Performed manual deployments of automated builds to 3 server environments.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Assisted stabilization of core product by performing static analysis to identify tens of thousands of memory leaks.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
   - description: Performed post-mortem crash analysis using strategic logging and debugging memory dumps with WinDbg.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng

@@ -6,4 +6,4 @@ project:
   role-final: "Author"
   accomplishments:
   - description: This resume is built using Gatsby, continuously tested & deployed using GitHub Actions, and hosted on GitHub Pages.
-    for-resume-variants: all
+    for-resume-variants: all, srsweng
