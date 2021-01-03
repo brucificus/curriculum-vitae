@@ -1,1 +1,0 @@
-A passionate self-taught software craftsperson with over 12 years of professional experience writing and maintaining full stack web applications, with a deep focus on backend systems and DevOps solutions.
