@@ -11,12 +11,13 @@ import { AccomplishmentPredicates } from "../models/accomplishment";
 
 const IndexPage = function() {
   const accomplishmentFilter = AccomplishmentPredicates.forAllOrSpecificResumeVariant("srsweng");
+  const profession_text = "Senior Software Engineer";
 
   return (
     <Layout>
-      <SEO title="Bruce Markham, Senior Software Engineer" />
+      <SEO title={`Bruce Markham, ${profession_text}`} />
 
-      <Header/>
+      <Header profession_text={profession_text} />
 
       <main>
         <Section caption="Profile">
