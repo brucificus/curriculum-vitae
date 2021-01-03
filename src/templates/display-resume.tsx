@@ -5,7 +5,6 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import SEO from "../components/seo";
 import Section from "../components/section";
-import ProfileText from "../components/profile-text";
 import JobsList from "../components/jobs-list";
 import ProjectsList from "../components/projects-list";
 import { AccomplishmentPredicates } from "../models/accomplishment";
@@ -13,7 +12,8 @@ import { AccomplishmentPredicates } from "../models/accomplishment";
 interface IDisplayResumeProps {
   pageContext: {
     resumeVariant: string,
-    professionText: string
+    professionText: string,
+    profileContentHtml: string
   }
 }
 
@@ -28,7 +28,7 @@ const DisplayResume = function(props: IDisplayResumeProps) {
 
       <main>
         <Section caption="Profile">
-          <ProfileText/>
+          <span dangerouslySetInnerHTML={{ __html: props.pageContext.profileContentHtml }} />
         </Section>
 
         <Section caption="Professional Experience">
@@ -46,7 +46,8 @@ const DisplayResume = function(props: IDisplayResumeProps) {
 DisplayResume.propTypes = {
   pageContext: {
     resumeVariant: PropTypes.string.isRequired,
-    professionText: PropTypes.string.isRequired
+    professionText: PropTypes.string.isRequired,
+    profileContentHtml: PropTypes.string.isRequired
   }
 };
 
