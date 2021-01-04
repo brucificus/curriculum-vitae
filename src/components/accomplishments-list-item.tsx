@@ -1,5 +1,5 @@
 import React from "react";
-
+import Markdown from "./markdown";
 import { IAccomplishment, accomplishmentPropType } from "../models/accomplishment";
 
 interface IAccomplishmentsListItemProps {
@@ -7,7 +7,7 @@ interface IAccomplishmentsListItemProps {
 };
 
 const AccomplishmentsListItem = (props: IAccomplishmentsListItemProps) => {
-  return <li dangerouslySetInnerHTML={{ __html: props.accomplishment.description }} />;
+  return <li><Markdown content={props.accomplishment.description} /></li>;
 };
 
 export default AccomplishmentsListItem;
