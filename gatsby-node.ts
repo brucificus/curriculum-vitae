@@ -58,7 +58,7 @@ export async function createPages({ graphql, actions }: { graphql: GraphqlDirect
         context: {
             resumeVariant: resumeVariant,
             professionText: "Senior Software Engineer",
-            profileContentHtml: getResumeProfileVariantOrDefault(resumeVariant).content
+            profileContentMarkdown: getResumeProfileVariantOrDefault(resumeVariant).content
         }
     });
 };
