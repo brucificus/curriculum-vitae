@@ -6,13 +6,16 @@
 
 ## 👀 Check It Out
 
-See it live at: https://brucificus.io/curriculum-vitae
+This resume actually comes in two versions:
 
-Or check out the underyling plain text at [./src/data](https://github.com/brucificus/curriculum-vitae/tree/master/src/data).
+- My [default resume](https://brucificus.io/curriculum-vitae/), which shows off my well-rounded experience as a Senior Software Engineer.
+- My [code-wrangler resume](https://brucificus.io/curriculum-vitae/code-wrangler), which focuses more specifically on my experience deep-diving into complex problem spaces.
+
+Or, if you'd like to see all the resume text juxtaposed together, peruse the source YAML files that can be found nested underneath [./src/data](https://github.com/brucificus/curriculum-vitae/tree/master/src/data).
 
 ## 👨‍🔬 Why I Did It This Way
 
-I built my resume in Gatsby because I thought it would help solve the problem of keeping the _presentation_ of my resume separate from the _content_.
+I built my resume in Gatsby because I thought it would help solve the problem of keeping the _presentation_ of my resume separate from the _content_. This was particular valuable when I wanted the same presentation _structure_ and _styling_ applied to more than one variant set of my resume's content.
 
 Or maybe I did it because TypeScript and Markdown are more fun than Word documents. You choose the explanation you like better.
 

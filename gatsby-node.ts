@@ -51,14 +51,25 @@ export async function createPages({ graphql, actions }: { graphql: GraphqlDirect
         return specificIfFound || defaultIfFound;
     }
 
-    const resumeVariant = "srsweng";
+    const srswengResumeVariant = "sr-sw-eng";
     createPage({
         path: '/',
         component: displayResumeTemplate,
         context: {
-            resumeVariant: resumeVariant,
+            resumeVariant: srswengResumeVariant,
             professionText: "Senior Software Engineer",
-            profileContentMarkdown: getResumeProfileVariantOrDefault(resumeVariant).content
+            profileContentMarkdown: getResumeProfileVariantOrDefault(srswengResumeVariant).content
+        }
+    });
+
+    const codeWranglerResumeVariant = "code-wrangler";
+    createPage({
+        path: '/code-wrangler',
+        component: displayResumeTemplate,
+        context: {
+            resumeVariant: codeWranglerResumeVariant,
+            professionText: "Senior Software Engineer",
+            profileContentMarkdown: getResumeProfileVariantOrDefault(codeWranglerResumeVariant).content
         }
     });
 };

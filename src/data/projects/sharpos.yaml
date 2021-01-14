@@ -1,0 +1,13 @@
+project:
+  project-name: "SharpOS"
+  project-location: "https://github.com/sharpos/SharpOS/"
+  project-start: "2007-04-07T15:24Z"
+  project-end: "2008-02-02T18:34Z"
+  role-final: "Contributor"
+  accomplishments:
+  - description: Contributed to open-source implementation of an operating system kernel and managed runtime in 100% pure C#.
+    for-resume-variants: code-wrangler
+  - description: Implemented rudimentary memory management, configuration of the x86 interrupt descriptor table, and utility kernel console commands in C#.
+    for-resume-variants: code-wrangler
+  - description: Supplemented compiler unit tests and compile-time static analysis.
+    for-resume-variants: code-wrangler
