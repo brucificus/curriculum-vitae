@@ -5,13 +5,13 @@ job:
   employment-end: "2013-12-01T05:00Z"
   job-title-final: "Software Developer II"
   accomplishments:
-  - description: Engaged in fast-paced requirements gathering, feature development, and deficiency triage in a rapidly-growing customer-focused SaaS startup.
+  - description: Engaged in fast-paced feature development, requirements gathering, and deficiency triage in a rapidly-growing SaaS startup.
     for-resume-variants: all, srsweng
-  - description: Championed application of multiple development best-practices for ASP.NET MVC applications in C#, including SOLID, dependency injection, automated testing, and static code analysis.
+  - description: Championed application of multiple development best-practices for ASP.NET MVC applications in C#, including dependency injection, automated testing, and static code analysis.
     for-resume-variants: all, srsweng
-  - description: Devised and implemented a build, test, and push-button deployment system for 18+ .NET deliverables targeting 5 hosting environments using PowerShell, MSBuild, MSDeploy, MigratorDotNet, TopShelf, and TeamCity.
+  - description: Implemented a build, test, and push-button deployment system for a large set of .NET applications using PowerShell, MSBuild, MSDeploy, MigratorDotNet, TopShelf, and TeamCity.
     for-resume-variants: all, srsweng
-  - description: Designed and implemented custom high-performance image rendering pipeline responsible for delivering user-created content consistently to users across multiple client platforms.
+  - description: Engineered a custom high-performance HTML-to-image rendering pipeline responsible for delivering user-created content to tens of thousands of simultaneous users in real-time.
     for-resume-variants: all, srsweng
   - description: Designed and orchestrated custom cloud-based load test software to isolate & measure performance bottlenecks, using AWS, C#, and PowerShell.
     for-resume-variants: all, srsweng

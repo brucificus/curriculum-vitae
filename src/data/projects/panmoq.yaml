@@ -1,0 +1,9 @@
+project:
+  project-name: "PanMoq"
+  project-location: "https://github.com/PanMoq/PanMoq"
+  project-start: "2022-03-04T02:33Z"
+  project-end: ""
+  role-final: "Author"
+  accomplishments:
+  - description: A no-fuss .NET test fixture library that combines AutoFixture and Moq together.
+    for-resume-variants: all, srsweng
