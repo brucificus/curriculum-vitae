@@ -1,0 +1,14 @@
+job:
+  employer-name: "CarMax"
+  employer-location: "(Remote) Richmond, VA"
+  employment-start: "2021-02-08T05:00Z"
+  job-title-final: "Senior Software Engineer"
+  accomplishments:
+  - description: Inherited, maintained, and enhanced two dozen microservices, written in C# for .NET Core, and hosted using serverless Azure PaaS offerings. Responsibility scope additionally included maintenance and enhancement of deployment automation via Azure DevOps pipelines, and infrastructure-as-code definitions written as Azure ARM & Bicep templates.
+    for-resume-variants: all, srsweng
+  - description: Pioneered a mass consolidation of several repositories of Azure ARM templates into a set of reusable high-quality Bicep modules - enabling a reduction in complexity of downstream infrastructure definitions by 95%. Subsequently leveraged simplified infrastructure definitions to reduce team's recurring infrastructure spend by 50%.
+    for-resume-variants: all, srsweng
+  - description: Centralized a diaspora of duplicated C# glue code from dozens of microservices into a set of internally-published NuGet packages, significantly reducing ongoing maintenance burden of those applications.
+    for-resume-variants: all, srsweng
+  - description: Refined application reliability and maintenance ergonomics by aligning applications under consistent patterns for configuration, secrets storage, logging, health checks, and availability monitoring - using Azure platform technologies including Key Vault, Application Insights, and Azure Monitor.
+    for-resume-variants: all, srsweng

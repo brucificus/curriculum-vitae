@@ -5,11 +5,11 @@ job:
   employment-end: "2019-12-14T05:00Z"
   job-title-final: "Software Engineer II"
   accomplishments:
-  - description: Designed, built, and maintained 20+ disparate continuous delivery pipelines, captured as code using Jenkins Job DSL, coordinated with GitHub, and gated by mandatory peer code reviews.
+  - description: Designed, built, and maintained 20+ disparate continuous delivery pipelines, captured as code using Jenkins Job DSL, coordinated with GitHub, and gated by collaborative peer code reviews.
     for-resume-variants: all, srsweng
-  - description: Built and deployed web applications, backend applications, and scripts for a variety of target execution platforms including IIS / ASP.NET, ASP.NET Core, Node.js, Python, PowerShell, Docker, AWS Elastic Beanstalk, AWS Elastic Container Service, and AWS Lambda.
+  - description: Built and deployed web applications, backend applications, and scripts for a variety of target execution platforms including IIS / ASP.NET, ASP.NET Core, Node.js, Python, PowerShell, Docker, AWS Elastic Container Service, and AWS Lambda.
     for-resume-variants: all, srsweng
-  - description: Migrated bespoke-deployed IIS web applications on self-managed VMs at Rackspace to immutable infrastructure at AWS, using Terraform and PowerShell. Reduced hosting costs by a factor of 2, sped up production deployment times by a factor of 5.
+  - description: Migrated hosting of IIS web applications on self-managed VMs at Rackspace to immutable infrastructure at AWS, using Terraform, PowerShell, and Elastic Beanstalk. Reduced hosting costs by 50%, sped up production deployment times by a factor of 5x.
     for-resume-variants: all, srsweng
   - description: Empowered team to safely iterate on our cloud infrastructure by capturing its definition as code and rigorously integrating its management with our continuous delivery processes and systems.
     for-resume-variants: all, srsweng

@@ -1,0 +1,9 @@
+project:
+  project-name: "FastGraph"
+  project-location: "https://github.com/FastGraph/FastGraph"
+  project-start: "2021-11-29T00:11Z"
+  project-end: ""
+  role-final: "Maintainer"
+  accomplishments:
+  - description: A .NET library of algorithms and data structures for directed & undirected graphs.
+    for-resume-variants: all, srsweng
