@@ -2,6 +2,7 @@ job:
   employer-name: "Frontline Education"
   employer-location: "(Remote) Malvern, PA"
   employment-start: "2019-12-16T05:00Z"
+  employment-end: "2021-02-05T05:00Z"
   job-title-final: "Senior Software Engineer II"
   accomplishments:
   - description: Championed both the incremental identification and just-in-time remediation of large swathes of tech debt - increasing the observability, stability, and maintainability of an aging legacy product.

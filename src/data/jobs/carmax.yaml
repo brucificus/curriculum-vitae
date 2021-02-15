@@ -1,0 +1,8 @@
+job:
+  employer-name: "CarMax"
+  employer-location: "(Remote) Richmond, VA"
+  employment-start: "2021-02-08T05:00Z"
+  job-title-final: "Senior Software Engineer"
+  accomplishments:
+  - description: TBD
+    for-resume-variants: all
