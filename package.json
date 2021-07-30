@@ -28,7 +28,7 @@
     "remark-react": "^8.0.0",
     "typography": "^0.16.21",
     "typography-theme-us-web-design-standards": "^0.16.19",
-    "unified": "^9.2.1"
+    "unified": "^10.1.0"
   },
   "devDependencies": {
     "@types/node": "^16.0.0",
