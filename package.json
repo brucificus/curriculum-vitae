@@ -24,7 +24,7 @@
     "react-icons": "^4.2.0",
     "react-typography": "^0.16.20",
     "remark": "^13.0.0",
-    "remark-parse": "^9.0.0",
+    "remark-parse": "^10.0.1",
     "remark-react": "^8.0.0",
     "typography": "^0.16.21",
     "typography-theme-us-web-design-standards": "^0.16.19",
