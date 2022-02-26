@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { IoIosMail } from "react-icons/io";
 
-import emailAddressStyles from "./email-address.module.scss";
+import * as emailAddressStyles from "./email-address.module.scss";
 
 const EmailAddress = (props) => { 
     const href = "mailto:" + props.value;

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import headerStyles from "./header.module.scss";
+import * as headerStyles from "./header.module.scss";
 import PhoneNumber from "./contact/phone-number";
 import EmailAddress from "./contact/email-address";
 import LinkedIn from "./contact/linkedin";
