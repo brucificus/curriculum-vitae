@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { IProject, projectPropTypes } from "../models/project";
-import projectsListItemStyles from "./projects-list-item.module.scss";
+import * as projectsListItemStyles from "./projects-list-item.module.scss";
 import TimeRange from "./time-range";
 
 interface IProjectsListItemProps {

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { IoIosPhonePortrait } from "react-icons/io";
 
-import phoneNumberStyles from "./phone-number.module.scss";
+import * as phoneNumberStyles from "./phone-number.module.scss";
 
 const PhoneNumber = (props) => { 
     const href = "callto:" + (props.value.replace("(","").replace(")","").replace(" ","").replace("-",""));

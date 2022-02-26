@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import layoutStyles from "./layout.module.scss";
+import * as layoutStyles from "./layout.module.scss";
 
 const Layout = ({ children }) => (
   <div className={ layoutStyles.container }>{children}</div>

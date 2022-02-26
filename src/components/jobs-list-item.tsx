@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { IJob, jobPropTypes } from "../models/job";
-import jobsListItemStyles from "./jobs-list-item.module.scss";
+import * as jobsListItemStyles from "./jobs-list-item.module.scss";
 import TimeRange from "./time-range";
 
 interface IJobsListItemProps {

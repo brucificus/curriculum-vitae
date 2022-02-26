@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import sectionStyles from "./section.module.scss";
+import * as sectionStyles from "./section.module.scss";
 
 const Section = ({caption, children}) => (
     <section className={sectionStyles.container}>

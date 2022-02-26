@@ -33,7 +33,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml`,
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sass`,

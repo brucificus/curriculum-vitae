@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { IoLogoGithub } from "react-icons/io";
 
-import linkedinStyles from "./github.module.scss";
+import * as linkedinStyles from "./github.module.scss";
 
 const LinkedIn = (props) => { 
     const href = "https://github.com/" + props.repoOwner;
