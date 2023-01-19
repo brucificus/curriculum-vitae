@@ -1,9 +1,79 @@
 .container {
-    margin: 0.25in 0.25in;
+    margin: 0.20in 0.20in;
+}
+
+@media screen {
+    .container {
+        margin: 0.20in 0.20in;
+    }
 }
 
 @media print {
     @page {
         size: A4 portrait;
+        margin: 0.5cm 0cm 1cm 0cm;
     }
+}
+
+section > header {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+
+section > main {
+    page-break-before: avoid;
+    page-break-after: auto;
+}
+
+article > header {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+
+article > main {
+    page-break-before: avoid;
+    page-break-after: auto;
+}
+
+main > ul {
+    page-break-before: avoid;
+    page-break-after: auto;
+}
+
+ul > li:first-child {
+    page-break-before: avoid;
+    // page-break-inside: auto;
+    page-break-after: auto;
+}
+
+li:first-child > p {
+    page-break-before: avoid;
+    // page-break-inside: auto;
+    page-break-after: auto;
+}
+
+ul > li:nth-child(1n+2) {
+    page-break-before: auto;
+    // page-break-inside: auto;
+    page-break-after: auto;
+}
+
+li:nth-child(1n+2) > p {
+    page-break-before: auto;
+    page-break-inside: auto;
+    page-break-after: auto;
+}
+
+ul > li:last-child {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+li:last-child > p {
+    page-break-before: auto;
+    page-break-inside: avoid;
+    page-break-after: auto;
 }

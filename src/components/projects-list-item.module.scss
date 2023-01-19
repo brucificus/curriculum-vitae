@@ -1,13 +1,8 @@
-.container {
-}
-
 header {
     display: grid;
     width: 100%;
     grid-template-areas: "jtf etr"
                          "enm elc";
-
-    page-break-inside: avoid;
 }
 
 .roleFinal {
@@ -30,8 +25,4 @@ header {
     grid-area: elc;
     display: flex;
     flex-direction: row-reverse;
-}
-
-.container > main:nth-child(odd) {
-    page-break-inside: avoid;
 }
