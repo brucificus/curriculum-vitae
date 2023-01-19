@@ -11,7 +11,7 @@ interface IProjectsListItemProps {
 };
 
 const ProjectsListItem = (props: IProjectsListItemProps) =>
-    <article className={projectsListItemStyles.container}>
+    <article>
         <header>
             <span className={projectsListItemStyles.roleFinal}>{props.project.role_final}</span>
             <span className={projectsListItemStyles.projectName}>{props.project.project_name}</span>

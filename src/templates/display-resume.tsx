@@ -9,6 +9,7 @@ import JobsList from "../components/jobs-list";
 import ProjectsList from "../components/projects-list";
 import Markdown from "../components/markdown";
 import { AccomplishmentPredicates } from "../models/accomplishment";
+import * as displayResumeStyles from "./display-resume.module.scss";
 
 interface IDisplayResumeProps {
   pageContext: {
@@ -22,7 +23,7 @@ const DisplayResume = function(props: IDisplayResumeProps) {
   const accomplishmentFilter = AccomplishmentPredicates.forAllOrSpecificResumeVariant(props.pageContext.resumeVariant);
 
   return (
-    <Layout>
+    <Layout className={displayResumeStyles.container}>
       <SEO title={`Bruce Markham, ${props.pageContext.professionText}`} />
 
       <Header professionText={props.pageContext.professionText} />
