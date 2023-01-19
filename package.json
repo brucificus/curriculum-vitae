@@ -24,7 +24,8 @@
     "react-markdown": "^8.0.0",
     "react-typography": "^0.16.20",
     "typography": "^0.16.21",
-    "typography-theme-us-web-design-standards": "^0.16.19"
+    "typography-theme-us-web-design-standards": "^0.16.19",
+    "source-map": "^0.8.0-beta.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.26",
