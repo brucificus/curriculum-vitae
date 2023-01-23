@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbrucificus_curriculum_vitae=self.webpackChunkbrucificus_curriculum_vitae||[]).push([[218],{2513:function(e,t,u){u.r(t);var c=u(7294),n=u(8707),l=u(7959);t.default=function(){return c.createElement(n.Z,null,c.createElement(l.Z,{title:"404: Not found"}),c.createElement("h1",null,"NOT FOUND"),c.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-c0446466ef31efc923ef.js.map
